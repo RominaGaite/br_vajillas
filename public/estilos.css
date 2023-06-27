@@ -196,35 +196,37 @@ p {
   text-align: center;
 }
 
-table {
-  width: 80%;
-  margin: 0 auto;
-  /* Para centrar la tabla */
-  background-color: white;
-  opacity: 0.8;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 1rem;
-  color: black;
-  border-collapse: collapse;
-  text-align: center;
-}
 
-th,
-td {
-  padding: 1rem;
-  width: 33.33%;
-  height: 5rem;
-  border: 1px solid black;
-}
+  table {
+    width: 80%;
+    margin: 0 auto;
+    /* Para centrar la tabla */
+    background-color: white;
+    opacity: 0.8;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
+    color: black;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  th,
+  td {
+    padding: 1rem;
+    width: 33.33%;
+    height: 5rem;
+    border: 1px solid black;
+  }
+  
+  .img-productos {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
 
-.img-productos {
-  width: 5rem;
-  height: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
 /*seccion final y footer*/
 .pedipresupuesto {
   height: 5rem;
@@ -232,12 +234,14 @@ td {
   align-items: center;
   text-align: center;
   background-color: black;
- 
+
 }
-.presupuesto{
+
+.presupuesto {
   color: white;
   animation: slide-text 5s infinite linear;
 }
+
 @keyframes slide-text {
   0% {
     transform: translateX(100%);
@@ -249,7 +253,7 @@ td {
 }
 
 
-footer{
+footer {
   width: 100%;
   height: auto;
   background-color: white;
@@ -259,11 +263,13 @@ footer{
   display: flex;
   flex-direction: column;
 }
-.logo-footer{
+
+.logo-footer {
   width: 8rem;
   height: auto;
 }
-.seccion-span{
+
+.seccion-span {
   display: flex;
   flex-direction: row;
   justify-items: center;
@@ -271,44 +277,158 @@ footer{
   justify-content: center;
   text-align: center;
 }
+
 /*seccion marca*/
-.seccion-marca{
+.seccion-marca {
   background-color: black;
   width: 100%;
-  height:3rem;
+  height: 3rem;
   display: flex;
   flex-direction: row;
   text-align: center;
   justify-content: center;
   justify-items: center;
-align-items: center;
-align-content: center;
-  
- 
+  align-items: center;
+  align-content: center;
+
+
 }
-.tit-1{
+
+.tit-1 {
   width: 9%;
-  font-size:  0.8rem; 
+  font-size: 0.8rem;
   color: white;
   margin-top: 0.5rem;
 }
+
 .tit-2 {
   width: 9%;
   font-size: 1rem;
   margin-top: 0.5rem;
   font-family: 'Mountains of Christmas', cursive;
- color: #ac4df9;
+  color: #ac4df9;
 }
 
-.tit-3{
+.tit-3 {
   width: 6%;
-  font-size:  0.9rem; 
+  font-size: 0.9rem;
   color: white;
   margin-top: 0.5rem;
   font-family: 'Poiret One', cursive;
 }
-.logo-estudio{
+
+.logo-estudio {
   width: 2rem;
   height: auto;
- 
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 760px){
+
+  
+  /*primer seccion*/
+  .seccion-wsp {
+    padding: 0;
+    margin: 0;
+  }
+  
+  h3 {
+   display: none;
+  }
+  
+  @keyframes scrollAnimation {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  
+    50% {
+      transform: scale(1.2);
+      opacity: 0.5;
+    }
+  
+    100% {
+      transform: scale(0.8);
+      opacity: 1;
+    }
+  }
+  
+  .encabezado {
+    flex-direction: column;
+  }
+  
+  .img-logo-encabezado {
+    width: 50%;
+  }
+  
+  p {
+    font-size: 1.2rem;
+  }
+  
+  .titulo {
+    font-size: 1.5rem;
+  }
+  
+  /*tabla*/
+  .lista {
+    color: rgb(242, 244, 236);
+    font-size: 3rem;
+    -webkit-text-stroke: 1px black; /* Para navegadores basados en WebKit (Chrome, Safari) */
+  
+  }
+  
+    table {
+      width: 70%;
+      margin: 0 auto;
+      background-color: white;
+      opacity: 0.8;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 1rem;
+      color: black;
+      border-collapse: collapse;
+      text-align: center;
+    }
+    
+    th,
+    td {
+      padding: 0.5rem;
+      width: 33.33%;
+      height: 5rem;
+      border: 1px solid black;
+    }
+    
+    .img-productos {
+      width: 5rem;
+      height: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+  
+  /*seccion final y footer*/
+
+  .seccion-span {
+    flex-direction: column;
+  }
+  
+  /*seccion marca*/
+  .tit-1 {
+    width: 30%;
+    font-size: 1rem;
+  }
+  
+  .tit-2 {
+    width: 30%;
+    font-size: 1.3rem;
+  }
+  
+  .tit-3 {
+    width: 20%;
+    font-size:1rem;
+  }
+  
+  .logo-estudio {
+    width: 3rem;
+  }
 }
