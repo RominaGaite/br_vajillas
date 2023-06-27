@@ -20,13 +20,14 @@ body {
   background-repeat: no-repeat;
 }
 
+
 /*primer seccion*/
 .seccion-wsp {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 80%;
   z-index: 9999;
   padding: 0.5rem;
   background-color: transparent;
@@ -276,6 +277,11 @@ footer {
   align-items: center;
   justify-content: center;
   text-align: center;
+
+}
+.tit-0{
+  color: black;
+  font-size: 1rem;
 }
 
 /*seccion marca*/
