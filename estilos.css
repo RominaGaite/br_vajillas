@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Mountains+of+Christmas&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+* {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  text-decoration: none;
+
+}
+
+body {
+
+  background-image: url(https://images.unsplash.com/photo-1515962187632-cc5c908fd2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*primer seccion*/
+.seccion-wsp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  padding: 0.5rem;
+  background-color: transparent;
+  margin: 0.5;
+  text-align: right;
+}
+
+@keyframes blink {
+  0% {
+    color: white;
+    font-size: 1rem;
+  }
+
+  20% {
+    color: yellow;
+    font-size: 0.8rem;
+  }
+
+  40% {
+    color: lightgreen;
+    font-size: 1.2rem;
+  }
+
+  60% {
+    color: lightblue;
+    font-size: 0.9rem;
+  }
+
+  80% {
+    color: pink;
+    font-size: 1rem;
+  }
+
+  100% {
+    color: black;
+    font-size: 1.2rem;
+  }
+}
+
+h3 {
+  width: 8rem;
+  height: auto;
+  animation: blink 8s infinite;
+  font-family: 'Belanosima', sans-serif;
+  text-align: center;
+  margin-left: 87%;
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+}
+
+.logowsp {
+  width: 4rem;
+  height: auto;
+  position: sticky;
+  margin-right: 2rem;
+  animation: scrollAnimation 3s ease-in-out infinite;
+}
+
+.encabezado {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.img-logo-encabezado {
+  width: 20%;
+}
+
+p {
+  font-size: 2rem;
+  color: white;
+  font-family: 'Belanosima', sans-serif;
+}
+
+.titulo {
+  width: 80%;
+  font-family: 'Belanosima', sans-serif;
+  color: white;
+  font-size: 2rem;
+}
+
+/*segunda seccion*/
+.info-1 {
+  width: 70%;
+  height: auto;
+  background-color: black;
+  opacity: 0;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  text-align: justify;
+  animation: aparecer-izquierda 3s ease-in-out forwards;
+}
+
+.info-2 {
+  width: 70%;
+  height: auto;
+  background-color: black;
+  opacity: 0;
+  padding: 0.5rem;
+  text-align: justify;
+  margin-top: 1rem;
+  margin-left: 30%;
+
+  animation: aparecer-derecha 3s ease-in-out forwards;
+}
+
+.info-3 {
+  width: 70%;
+  height: auto;
+  padding: 0.5rem;
+  text-align: justify;
+  background-color: black;
+  opacity: 0;
+  margin-top: 1rem;
+
+  animation: aparecer-izquierda 3s ease-in-out 0.5s forwards;
+}
+
+@keyframes aparecer-izquierda {
+  0% {
+    opacity: 1;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 0.5;
+    transform: translateX(0);
+  }
+}
+
+@keyframes aparecer-derecha {
+  0% {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 0.5;
+    transform: translateX(0);
+  }
+}
+
+/*tabla*/
+.lista {
+  color: black;
+  width: 100%;
+  margin: 2rem;
+  text-align: center;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  /* Para centrar la tabla */
+  background-color: white;
+  opacity: 0.8;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1rem;
+  color: black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th,
+td {
+  padding: 1rem;
+  width: 33.33%;
+  height: 5rem;
+  border: 1px solid black;
+}
+
+.img-productos {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+/*seccion final y footer*/
+.pedipresupuesto {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+ 
+}
+.presupuesto{
+  color: white;
+  animation: slide-text 5s infinite linear;
+}
+@keyframes slide-text {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+footer{
+  width: 100%;
+  height: auto;
+  background-color: white;
+  font-size: 1rem;
+  color: rgb(4, 4, 4);
+  font-family: 'Belanosima', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+.logo-footer{
+  width: 8rem;
+  height: auto;
+}
+.seccion-span{
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+/*seccion marca*/
+.seccion-marca{
+  background-color: black;
+  width: 100%;
+  height:3rem;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+align-items: center;
+align-content: center;
+  
+ 
+}
+.tit-1{
+  width: 9%;
+  font-size:  0.8rem; 
+  color: white;
+  margin-top: 0.5rem;
+}
+.tit-2 {
+  width: 9%;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  font-family: 'Mountains of Christmas', cursive;
+ color: #ac4df9;
+}
+
+.tit-3{
+  width: 6%;
+  font-size:  0.9rem; 
+  color: white;
+  margin-top: 0.5rem;
+  font-family: 'Poiret One', cursive;
+}
+.logo-estudio{
+  width: 2rem;
+  height: auto;
+ 
+}
